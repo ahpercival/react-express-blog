@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 
 const BlogCard = (article) => {
   return (
-    <Card
-      key={article.props.id}
-      className="blogCard"
-      style={{ width: "18rem" }}
-    >
+    <Card key={article.props.id} className="blogCard">
       <Card.Img
         variant="top"
         src={article.props.image}
