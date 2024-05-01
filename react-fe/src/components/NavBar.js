@@ -3,9 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="navigation">
+    <Navbar expand="lg" className="bg-black p-12 text-lg">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand className="text-white hover:text-slate-300 no-underline" href="/">Home</Navbar.Brand>
       </Container>
     </Navbar>
   );

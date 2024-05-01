@@ -5,7 +5,7 @@ export const useHome = () => {
   const $posts = usePosts();
 
   const pagination = usePagination({
-    postsPerPage: 10,
+    postsPerPage: 8,
     postCount: $posts.data?.articles.length,
   });
 
