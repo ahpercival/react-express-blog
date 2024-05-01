@@ -16,11 +16,11 @@ export const Home = () => {
   if ($posts.isSuccess) {
     return (
       <div>
-        <Container>
-          <Row>
+        <Container className="m-4">
+          <Row className="grid gap-4 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 m-4">
             {currentPosts.map((article, index) => {
               return (
-                <Col key={index} xs={6} md={4}>
+                <Col key={index}>
                   <BlogCard props={article} />
                 </Col>
               );
